@@ -1,0 +1,267 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with chai[HC]</title>
+</head>
+<body>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family: ; */
+            box-sizing: border-box;
+
+        }
+
+ 
+        .title{
+            width: 100%;
+            margin: 10px;
+            font-size: 30px;
+            color: #00d5ff;
+            text-decoration: none;
+        }
+        a{
+            text-decoration:none;
+            color: #00d5ff;
+
+        }
+        
+
+         
+
+
+
+        .flex-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            justify-content: space-around;
+            /* justify-content: space-between; */
+        }
+        .flex-box{
+            width: 300px;
+            height: 180px;
+             background: linear-gradient(rgb(83, 214, 214),rgb(0, 184, 110));
+            color: rgb(255, 0, 0);
+            font-size: 2px;
+            text-align: center;
+            /* line-height: 200px;  for all content in center */
+            line-height: 200px; 
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .flex-box img{
+            width: 300px;
+            height: 180px;
+            border-radius: 10px;
+
+
+ 
+        }
+
+
+
+
+
+        input{
+    display: none;
+
+}
+
+ 
+/* css file  */
+
+.project input{
+    display: none;
+
+}
+
+
+
+
+        
+   
+footer{
+    text-align: center;
+    -webkit-transition: .5s ease-in-out;
+    position: absolute;
+    color: azure;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* min-width: 967px; */
+    /* font-size: 20px; */
+    /* height: px; */
+    background-color: #171616;
+    /* margin: 0 0 0 0; */
+    padding-bottom: 5px;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+
+
+/* contacts */
+
+ 
+ 
+
+.contact-icons i{
+	height: 40px;
+	width: 40px;
+	background: #06d9ba;
+	color:  #f2f2f2;
+	font-size: 23px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	margin-right: 15px;
+ 	transition: all .45s ease;
+
+}
+.contact-icons {
+ 	text-align: center; 
+}
+
+.contact-icons i:hover{
+	background:  #f2f2f2;
+	color: #06d9ba;
+}
+
+ 
+.title .hc{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+ 
+     
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #111010;
+     color: #ffffff;  
+     position: relative;
+     margin: 0;
+     min-height: 100%;
+     padding-bottom: 6.74rem;
+     box-sizing: inherit;
+}
+
+ 
+
+.title{
+    background-color: #000000;
+    margin: 0;
+
+}
+ 
+ button{
+    background-color:rgb(203, 134, 31);
+    float: right; 
+    margin:10px; 
+    height:35px; 
+    border-radius:5px;
+     color:rgb(255, 255, 255);
+    
+    padding: 15px;
+    display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+  }
+ 
+
+    </style>
+    <!-- <link rel="stylesheet" href="project.css"> -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/ice-tea.png' %}">
+
+
+
+
+       
+</head>
+<body>
+    <div class="title">
+        <a href="https://kishansutariya23.github.io/" target="_blank" rel="noopener noreferrer"><img src="{% static 'images/ice-tea.png' %}" width=50px alt="" srcset=""></a>
+        <button class="login"type="button"> 
+                Login/Register
+        </button>
+    </div>
+    <div class="title"> 
+        
+<hr>
+        <img class="hc" src="{% static 'images/HC logo.jpeg' %}" alt="" height="50px"   " srcset="">
+    </div>
+    <!-- <div class="project_title"></div> -->
+    <HR> 
+ 
+    
+    
+    
+<BR></BR> 
+
+    {% block content %}
+
+
+
+    {% endblock content%}
+
+
+
+
+
+
+   
+               <br><br>
+    
+    <footer>
+
+
+
+       <marquee behavior="" direction="">I'm Data Enthusiast and not have much interest in FrontEnd part. Thank you 👨‍💻</marquee>
+       
+       <div class="contact-icons">
+           <a href="https://kishansutariya23.github.io/" target="_blank"><i class='bx bxs-id-card' ></i></a>
+           <a href="https://github.com/kishandata23" target="_blank"><i class='bx bxl-github' ></i></a>
+           <a href="https://www.linkedin.com/in/kishankumar-sutariya/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+           <a href="https://www.instagram.com/kishandata23/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+           <a href="https://www.youtube.com/@kishandata23" target="_blank"><i class='bx bxl-youtube' ></i></a>
+           <a href="https://twitter.com/ks23_code" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            
+           <br>
+       </div>
+      
+       
+       <br>
+       Terms & Conditions <br>
+       Copyright ©️ <script>document.write(new Date().getFullYear())</script> username : kishandata23 <br>
+        <img src="{% static 'images/django_original_logo_icon_146559.png' %}" alt="" style="width:55px"srcset=""> &nbsp;
+        <img width="25" height="25"src="https://img.icons8.com/sf-black-filled/64/FFFFFF/github.png" alt="github"/>&nbsp;
+        <img src="{% static 'images/vercel.png' %}" alt="" style="width:60px"srcset=""> &nbsp;
+    
+    </footer>
+   
+</body>
+</html>

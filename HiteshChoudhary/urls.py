@@ -22,3 +22,8 @@ urlpatterns = [
     path('',include('MainPage.urls')),
     path('python',include('python_playlist.urls')),
 ]
+
+ 
+
+
+

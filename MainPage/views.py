@@ -3,4 +3,4 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 class HomePageView(TemplateView):
-    template_name = 'python_playlist/1_launch.html'
+    template_name = 'mainpage/course.html'
