@@ -2,21 +2,23 @@
 {% block content %}
 <div class="flex-container">
 
-
-        
-
     <div class="flex-box photo">
         
-        <a href="https://www.youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
-            <img src="https://i.ytimg.com/vi/Ca5DLSDfPec/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBsJ4X5vpB_gv8kREBZ92mwrwlT8w" alt="" srcset=""></a>
+        <!-- <a href="https://www.youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s" target="_blank" rel="noopener noreferrer" style="cursor: pointer;"> -->
+            <a href="{% url 'python' %}" target="_blank" rel="noopener noreferrer" style="cursor: pointer;">
+            <img src="https://i.ytimg.com/vi/Ca5DLSDfPec/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBsJ4X5vpB_gv8kREBZ92mwrwlT8w" alt="" srcset="">
+           </a>
+            
     </div>
 
 
     <div class="flex-box photo">
         <a href="https://www.youtube.com/playlist?list=PLRAV69dS1uWSj3ltu0ym1LwWg4509PZ0N" target="_blank" rel="noopener noreferrer" style="cursor: pointer;"><img src="https://i.ytimg.com/vi/f-6qFnC56F0/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC6ON17YFys11f_jK5HOQH4B0tvCg" alt="" srcset=""></a>
     </div>
+     
     
      
     
 </div>
+<br><br><br><br>
 {% endblock content %}
