@@ -25,6 +25,9 @@
             "src":"/(.*)",
             "dest":"HiteshChoudhary/wsgi.py"
         }
-    ]
+    ],
+    "outputDirectory": "staticfiles_build"
 }
+ 
+
  
